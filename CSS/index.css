@@ -85,7 +85,6 @@ table{
 .info{
     text-align: center;
     font-size: large;
-    position: relative; top: 20px;
     font-family: Arial;
     color: #14213d;
 }
