@@ -90,15 +90,23 @@ table{
     position: relative; top:30px;
 }
 
-.lista{
+.info_firma{
+    text-align: center;
     font-size: large;
+    font-family: Arial;
+    color: #14213d;
+    position: relative; top:100px;
+}
+
+.lista{
+    font-size: smaller;
     position: relative; top: 20px;
     text-align: justify;
 }
 
 .big_logo{
     text-align: center;
-    position: relative; top: 120px;
+    position: relative; top: 40px;
 }
 
 /*  ***LINKI***   */
