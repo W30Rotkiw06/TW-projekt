@@ -1,13 +1,32 @@
-.top{
+.top {
+    width: 55%; /*zmienić na 650 dla pełnego*/
+    height: 45px;
+}
+
+
+.menu {
     text-align: right;
     position: relative;
-    right: 15px;
-    font-size: large;
+    top: 10px;
+}
+
+th.menu {
+    display: inline-block;
+}
+
+th.logo-container {
+    display: inline-block;
+}
+
+.top tr {
+    display: flex;
+    justify-content: space-between;
 }
 
 header{
     background-color: #bebebe;
     color: #14213d;
+    background-image: linear-gradient(to bottom, #bebebe, #E7E7E7);
 
     text-align: center;
     font-family: Arial;
@@ -24,8 +43,9 @@ header{
 }
 
 .logo{
-    float: left;
-    position: relative; left: 20px;
+    text-align: left;
+    position: fixed;
+    left: 10px
 }
 
 .icon{
@@ -33,7 +53,7 @@ header{
 }
 
 
-body{background-color: #e5e5e5;}
+body{background-color: #ffffff;}
 
 footer{
     font-size: small;
@@ -54,7 +74,16 @@ table{
     
     font-family: Arial;
     font-size: 50px;
-    color: #17252A;
+    font-weight: 600;
+    background-image: linear-gradient(45deg,#14213D, #527F90);
+    color: transparent;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    top: 40px;
+
+    
 }
 
 .naglowek_maly{
@@ -99,14 +128,27 @@ table{
 }
 
 .lista{
-    font-size: smaller;
-    position: relative; top: 20px;
+    font-size: larger;
+    font-weight: 400;
     text-align: justify;
+    align-items: center;
+    height: 80%;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .big_logo{
     text-align: center;
     position: relative; top: 40px;
+}
+
+.feed{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    position: relative;
+    top: 10px;
 }
 
 /*  ***LINKI***   */
@@ -122,7 +164,6 @@ a:active{
 }
 
 a:hover{
-    color: #FCA311;
+    color: #939A7F;
     text-decoration: none;
 }
-
