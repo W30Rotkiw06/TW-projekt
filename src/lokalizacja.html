@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="PL">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../assety/favikona.png">
+    <meta name="keywords" content="Taszarek Wieczorek Projekt, Łukasz Wieczorek, Jakub Taszarek">
+    <meta name="description" content="Lokalizacja - Taszarek Wieczorek Projekt. Biuro projektowe konstrukcji inżynierskich i geotechnicznych. Zalesie 5h, 62-090 Mrowino." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokalizacja - Taszarek Wieczorek Projekt sp. z o.o.</title>
+    <link href="../CSS/index.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-emerald-100 via-green-100 to-teal-100 text-gray-800 min-h-screen">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-lg border-b border-gray-200">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center transform hover:scale-105 transition-transform duration-300">
+                    <img src="../assety/logo.png" alt="Logo" class="h-12">
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 border-b-2 border-transparent hover:border-emerald-700">STRONA GŁÓWNA</a>
+                    <a href="lokalizacja.html" class="text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 border-b-2 border-emerald-700">GDZIE JESTEŚMY</a>
+                    <a href="info.html" class="text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 border-b-2 border-transparent hover:border-emerald-700">ZAKRES DZIAŁALNOŚCI</a>
+                    <a href="kontakt.html" class="text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 border-b-2 border-transparent hover:border-emerald-700">KONTAKT</a>
+                </nav>
+
+                <!-- Hamburger Button -->
+                <button id="hamburger" class="md:hidden focus:outline-none" onclick="toggleMenu()">
+                    <svg class="w-8 h-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
+                <a href="index.html" class="block text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 py-2 border-l-4 border-transparent hover:border-emerald-700 pl-4">STRONA GŁÓWNA</a>
+                <a href="lokalizacja.html" class="block text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 py-2 border-l-4 border-emerald-700 pl-4">GDZIE JESTEŚMY</a>
+                <a href="info.html" class="block text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 py-2 border-l-4 border-transparent hover:border-emerald-700 pl-4">ZAKRES DZIAŁALNOŚCI</a>
+                <a href="kontakt.html" class="block text-gray-700 font-semibold hover:text-emerald-700 transition-colors duration-300 py-2 border-l-4 border-transparent hover:border-emerald-700 pl-4">KONTAKT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <!-- Page Title -->
+        <section class="text-center mb-16 animate-fadeIn">
+            <h1 class="text-5xl font-bold mb-4 gradient-text">Gdzie Jesteśmy</h1>
+        </section>
+
+        <!-- Location and Map Combined -->
+        <section class="max-w-6xl mx-auto">
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 border border-emerald-300 hover:shadow-2xl transition-all duration-300">
+                <!-- Office Address -->
+                <div class="flex items-center mb-8">
+                    <div class="bg-gradient-to-br from-emerald-700 to-green-800 p-4 rounded-full mr-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-2">Adres Biura</h2>
+                        <p class="font-semibold text-2xl text-emerald-700">Zalesie 5h, 62-090 Mrowino</p>
+                    </div>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="rounded-xl overflow-hidden border-4 border-emerald-200" style="width: 100%; height: 600px;">
+                    <iframe 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=pl&amp;q=Zalesie%205h,%2062-090%20Mrowino+(Taszarek%20Wieczorek%20Projekt%20Sp.%20z%20o.o.)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        class="w-full h-full"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white mt-20 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-300 mb-2">© <span id="year"></span> Taszarek Wieczorek Projekt sp. z o.o.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            // Toggle menu visibility
+            mobileMenu.classList.toggle('hidden');
+            
+            // Toggle icons
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>

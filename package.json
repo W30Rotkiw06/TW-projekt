@@ -1,0 +1,25 @@
+{
+  "name": "tw-projekt",
+  "version": "1.0.0",
+  "description": "A small business website using Tailwind CSS",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "tailwindcss build src/input.css -o src/output.css",
+    "watch": "tailwindcss build src/input.css -o src/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.0.0"
+  },
+  "keywords": [
+    "tailwindcss",
+    "small business",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
